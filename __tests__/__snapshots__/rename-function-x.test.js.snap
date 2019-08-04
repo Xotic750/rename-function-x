@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renameFunction should throw if name is invalid 1`] = `"Not a valid function name \\"new name\\""`;
+
+exports[`renameFunction should throw when fn not a function 1`] = `"null is not a function"`;
