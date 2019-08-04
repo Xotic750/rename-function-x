@@ -1,6 +1,6 @@
 {
   "name": "rename-function-x",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rename a function.",
   "homepage": "https://github.com/Xotic750/rename-function-x",
   "author": {
@@ -55,6 +55,7 @@
     "is-var-name": "^2.0.0",
     "object-define-property-x": "^5.0.17",
     "object-get-own-property-descriptor-x": "^4.0.18",
+    "to-boolean-x": "^2.0.25",
     "to-string-x": "^2.0.35"
   },
   "devDependencies": {

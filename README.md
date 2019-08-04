@@ -51,4 +51,8 @@ import renameFunction from 'rename-function-x';
 const fn = function test() {};
 console.log(renameFunction(fn, 'hw')); // true if a success, else false
 console.log(fn.name); // hw if set, else test
+
+// The following would normally throw an error as it is a reserved name.
+// However, you can for the rename as follows.
+console.log(renameFunction(fn, 'catch', true)); // true if a success, else false
 ```

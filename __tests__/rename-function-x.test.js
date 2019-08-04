@@ -16,8 +16,15 @@ describe('renameFunction', function() {
   it('should throw if name is invalid', function() {
     expect.assertions(1);
     expect(function() {
-      renameFunction(function() {}, 'new name');
+      renameFunction(function() {}, 'catch');
     }).toThrowErrorMatchingSnapshot();
+  });
+
+  it('rename can be forced', function() {
+    expect.assertions(1);
+    expect(function() {
+      renameFunction(function() {}, 'catch', true);
+    }).not.toThrow();
   });
 
   it('should return a boolean representing success', function() {

@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2019-present",
-  "date": "2019-08-04T22:36:38.965Z",
+  "date": "2019-08-04T23:01:41.974Z",
   "describe": "",
   "description": "Rename a function.",
   "file": "rename-function-x.js",
-  "hash": "46a7940e83139ac3ba3a",
+  "hash": "e631ed41d9c7ab14d628",
   "license": "MIT",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -2167,6 +2167,7 @@ function isVarName(str) {
 
 
 
+
 var rename_function_x_esm_rename = function rename(fn, name) {
   var descriptor = object_get_own_property_descriptor_x_esm(fn, 'name');
 
@@ -2183,20 +2184,27 @@ var rename_function_x_esm_rename = function rename(fn, name) {
 var supportsFunctionRenaming = attempt_x_esm(function attemptee() {
   /* eslint-disable-next-line lodash/prefer-noop */
   return rename_function_x_esm_rename(function test1() {}, 'test2');
-}).value === 'test2';
+}).value === 'test2'; // eslint-disable jsdoc/check-param-names
+// noinspection JSCommentMatchesSignature
+
 /**
  * Renames a function.
  *
  * @param {Function} fn - The function to be renamed.
  * @param {string} name - The new name for the function.
+ * @param {boolean} [force=false] - Rename even if reported as not valid.
  * @returns {boolean} - Returns true if renaming was a success; otherwise false.
  */
+// eslint-enable jsdoc/check-param-names
 
 var rename_function_x_esm_renameFunction = function renameFunction(fn, name) {
   assert_is_function_x_esm(fn);
   var string = to_string_x_esm(name);
+  /* eslint-disable-next-line prefer-rest-params */
 
-  if (isVarName(string) === false) {
+  var force = arguments.length > 2 && to_boolean_x_esm(arguments[2]);
+
+  if (force === false && isVarName(string) === false) {
     throw new Error("Not a valid function name \"".concat(string, "\""));
   }
 
