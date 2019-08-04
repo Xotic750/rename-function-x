@@ -36,30 +36,19 @@
   alt="bettercodehub score" height="18">
 </a>
 
-<a name="module_rename-function-x"></a>
-
 ## rename-function-x
 
-Boilerplate for standard modules.
+Rename a function.
 
-<a name="exp_module_rename-function-x--module.exports"></a>
-
-### `module.exports` ⇒ <code>\*</code> ⏏
-
-This method is just a placeholder.
-
-**Kind**: Exported member  
-**Returns**: <code>\*</code> - The target.  
-**Throws**:
-
-- <code>Error</code> If target is not undefined.
-
-| Param    | Type            | Description |
-| -------- | --------------- | ----------- |
-| [target] | <code>\*</code> | The target. |
+Note: This is not supported in all environments.
+See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name#Browser_compatibility
 
 **Example**
 
 ```js
-import placeHolder from 'rename-function-x';
+import renameFunction from 'rename-function-x';
+
+const fn = function test() {};
+console.log(renameFunction(fn, 'hw')); // true if a success, else false
+console.log(fn.name); // hw if set, else test
 ```
