@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2019-present",
-  "date": "2019-08-20T19:50:59.584Z",
+  "date": "2019-08-27T20:38:46.468Z",
   "describe": "",
   "description": "Rename a function.",
   "file": "rename-function-x.js",
