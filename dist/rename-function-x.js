@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2019-present",
-  "date": "2019-08-28T15:34:51.888Z",
+  "date": "2019-08-28T17:34:04.573Z",
   "describe": "",
   "description": "Rename a function.",
   "file": "rename-function-x.js",
   "hash": "a9dfd015fdcd70f9de1e",
   "license": "MIT",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
